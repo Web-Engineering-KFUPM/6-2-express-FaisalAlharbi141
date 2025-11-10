@@ -6,13 +6,15 @@ const app = express();
 const PORT = 3000;
 
 {/*write code for cors*/
-    app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+    app.use(cors());
 }
 
 
 {/*write code to define routes*/}
 
 
-{/*write code to create server*/}
+{/*write code to create server*/
+    app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
+}
